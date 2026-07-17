@@ -1,0 +1,274 @@
+/*Base Styles*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fdf2f8;
+    color: #1e1e2e;
+}
+
+main, header, footer {
+    padding: 24px;
+    margin: 0 auto;
+    max-width: 720px;
+
+}
+
+header,footer{
+    text-align: center;
+}
+
+header{
+    padding:48px 20px 31px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f0d5e2;
+    text-align: center;
+}
+
+header h1{
+    color: #1e1e2e;
+    margin: 0 0 12px;
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header p{
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #6b6b7b;
+    max-width: 480px;
+    font-size: 15px;
+}
+footer{
+    color: #999;
+    font-size: 15px;
+}
+
+/*Hidden Class*/
+.hidden{
+    display: none;
+}
+
+/*Section Spacing*/
+
+.search-section,
+.meassage-section,
+.result-section,
+.favorite-section{
+    margin-top: 15px;
+}
+
+/*Search Form*/
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+#wordInput{
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+
+}
+
+#searchButton {
+    padding: 12px 22px;
+    font-size: 16px;
+    background-color: #4f46e5;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    white-space: nowrap;
+
+}
+#searchButton:hover{
+    background-color: #4338ca;
+}
+
+.search-label{
+    display: block;
+    color: #6f6d68;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+
+
+}
+
+/*Loading and Error messages*/
+
+#error-message{
+    padding: 10px;
+    background-color: #fbeaea;
+    border-radius: 6px;
+    margin-top: 10px;
+    color: #a32d2d;
+}
+
+#loading-message{
+    color: #555;
+    margin-top: 10px;
+
+}
+
+/*Results Section*/
+
+.results{
+    background-color: white;
+    border:1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-top: 9px;
+    padding:20px;
+    box-shadow:0 3px 3px rgba(7, 1, 1, 0.08);
+
+}
+
+#word-title{
+    margin: 0 0 4px;
+    text-transform: capitalize;
+}
+
+#word-phonetic{
+    color: #666;
+    margin: 0 0 10px;
+
+}
+
+#audio-playback-btn,
+#fav-btn{
+    padding: 8px 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 8px;
+
+}
+
+#audio-playback-btn:hover,
+#fav-btn:hover{
+    background-color: #f0f0f0;
+}
+
+/*This class is added by JS once a word is added to favorites*/
+#fav-btn.saved{
+    color: white;
+    background-color: #3c3489;
+}
+
+/*The Meanings, Definitions, Examples, Source and Synonyms */
+.meaning{
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+}
+
+.meaning h3{
+    font-size:16px;
+    margin: 0 0 6px;
+    color: #4f46e5;
+
+}
+
+.definitions-list {
+    margin: 0;
+    padding-left: 20px;
+
+}
+
+.definitions-list li{
+    margin-bottom: 8px;
+
+}
+
+.example-sentence{
+    font-style:italic;
+    color: #555;
+    margin: 4px 0 0;
+
+}
+
+#word-synonyms,
+#word-src{
+    font-size: 13px;
+    margin-top: 12px;
+
+}
+
+/*Favorite Section*/
+
+.favorites{
+    padding: 0;
+    list-style: none;
+
+}
+
+.favorite-item{
+    background-color: #fdf4f7;
+    border: 1px solid #f5d9e3;
+    border-radius: 7px;
+    padding: 12px 16px
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.favorite-item:hover{
+    background-color: #fbe8ee;
+}
+
+.remove-btn{
+    color: #dc2626;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+.remove-btn:hover{
+    text-decoration: underline;
+}
+
+.favorite-section{
+    background-color: white;
+    border-radius: 9px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.favorite-section h2{
+    font-size: 20px;
+    margin-top:0;
+}
+
+@media( max-width:480px){
+    #search-form{
+        flex-direction: column;
+    }
+    #wordInput,
+    #searchButton{
+        width:100%;
+    }
+}
+    
