@@ -4,11 +4,11 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
-    background-color: #fdf2f8;
+    background-color: #E4F2E7;
     color: #1e1e2e;
 }
 
@@ -24,10 +24,12 @@ header,footer{
 }
 
 header{
-    padding:48px 20px 31px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #f0d5e2;
+    padding:20px 20px 31px;
+    margin-bottom: 4px;
     text-align: center;
+    background:#ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba( 0, 0, 0, 0.04);
 }
 
 header h1{
@@ -36,7 +38,7 @@ header h1{
     font-size: 42px;
     font-weight: 600;
     letter-spacing: -0.5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 
 header p{
@@ -45,6 +47,7 @@ header p{
     color: #6b6b7b;
     max-width: 480px;
     font-size: 15px;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
 }
 footer{
     color: #999;
@@ -84,7 +87,7 @@ footer{
 #searchButton {
     padding: 12px 22px;
     font-size: 16px;
-    background-color: #4f46e5;
+    background-color: #6B3F5C;
     cursor: pointer;
     color: white;
     border-radius: 6px;
@@ -93,7 +96,7 @@ footer{
 
 }
 #searchButton:hover{
-    background-color: #4338ca;
+    background-color: #522F47;
 }
 
 .search-label{
@@ -162,13 +165,13 @@ footer{
 
 #audio-playback-btn:hover,
 #fav-btn:hover{
-    background-color: #f0f0f0;
+    background-color: #6B3F5C;
 }
 
 /*This class is added by JS once a word is added to favorites*/
 #fav-btn.saved{
     color: white;
-    background-color: #3c3489;
+    background-color: #6B3F5C;
 }
 
 /*The Meanings, Definitions, Examples, Source and Synonyms */
@@ -222,7 +225,7 @@ footer{
     background-color: #fdf4f7;
     border: 1px solid #f5d9e3;
     border-radius: 7px;
-    padding: 12px 16px
+    padding: 12px 16px;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
